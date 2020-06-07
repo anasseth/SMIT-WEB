@@ -59,7 +59,7 @@ alert('my email address is '+ email)
 var book = 'A Smarter Way To Learn JavaScript'
 alert('I am Trying to learn from the book '+ book )
 
-document.getElementsByTagName('body').innerHTML = '<h1>Yah ! I can write HTML content through JavaScript</h1>'
+document.getElementsByTagName('body')[0].innerHTML = '<h1>Yah ! I can write HTML content through JavaScript</h1>'
 
 
 var myage = 'I am 15 years old'
@@ -94,8 +94,43 @@ var ffjdsd = 'Super !! legal Variable Name';
 var $OnlyDollarSignAllowed = 'Super !! legal Variable Name';
 
 var rulesForNamingJavascriptVariable = '<h2>Rules for naming JS variables</h2> <br /> <p> Variable names can only contain numbers, $ and __ .</p> <br /> <p> Variables must begin with a dollar sign $ , underscore or letter . For example $name, _name or name</p> <br /> <p>  Variable names are case-Sensitive</p> <br /> <p>Variable names should not be JS KeyWords</p> '
-document.getElementsByTagName('body').innerHTML = rulesForNamingJavascriptVariable
+document.getElementsByTagName('body')[0].innerHTML = rulesForNamingJavascriptVariable
 
 
 
+var addition = 5+3;
+var division = 5/3;
+var subraction = 5-3;
+var modulusOperator = 5%3;
+var multiplication=5*3;
+alert('Sum Of 5 and 3 is '+addition)
+alert('Subraction Of 5 and 3 is '+subraction)
+alert('Multiplication Of 5 and 3 is '+multiplication)
+alert('Division Of 5 and 3 is '+division)
+alert('Modulus Of 5 and 3 is '+modulusOperator)
+
+
+var JSfun ;
+document.getElementById('div1').innerHTML = '“Value after variable declaration is : '+JSfun+' ."'
+JSfun = 5;
+document.getElementById('div1').innerHTML += ' “Initial value:'+JSfun+ '."'
+JSfun++
+document.getElementById('div1').innerHTML += ' "Value after increment is:'+JSfun+'."'
+JSfun = JSfun + 7
+document.getElementById('div1').innerHTML += ' " Value after addition is: '+JSfun+'."' 
+JSfun--
+document.getElementById('div1').innerHTML += ' “Value after decrement is: '+JSfun+'."'
+JSfun = JSfun%3;
+document.getElementById('div1').innerHTML += '  “The remainder is : '+JSfun+'."'
+
+var tickets = 600;
+var totalCost = tickets*5
+document.getElementById('div1').innerHTML = '<h1>Total Cost To Buy 5 Tickets To a Movie is'+totalCost+'</h1>'
+
+var number=4;
+var ans;
+for (var i = 1; i<11 ; i++){
+    ans = number * i ;
+    document.getElementById('div1').innerHTML += '<h2>4 x '+i+' = '+ans+'</h2>'
+}
 
